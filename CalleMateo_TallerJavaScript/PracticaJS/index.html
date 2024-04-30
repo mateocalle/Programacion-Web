@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <h1>Historia Clínica</h1>
+</header>
+<!--<div class="container-fluid mt-4">-->
+<div class="container mt-4">
+    <!--<div>-->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="profile-picture">
+                <label for="profile-picture-input">
+                    <img id="profile-picture-preview" src="https://static.vecteezy.com/system/resources/thumbnails/020/765/399/small_2x/default-profile-account-unknown-icon-black-silhouette-free-vector.jpg" class="img-fluid" alt="Foto de perfil">
+                    <!--          <span class="mt-2 d-block">Seleccionar foto</span>-->
+                </label>
+                <input type="file" class="form-control-file" id="profile-picture-input" accept="image/*" onchange="previewProfilePicture(event)" required>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="profile-details">
+                <h2>Detalles del perfil</h2>
+                <form id="historiaClinicaForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cedula">Cedula:</label>
+                        <input type="text" class="form-control" id="cedula" name="cedula" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" pattern="\d{7}|\d{10}" title="El teléfono debe tener 7 o 10 dígitos numéricos." required>
+                        <!--            <input type="tel" class="form-control" id="telefono" name="telefono" required>-->
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="datetime-local" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required> <!--<br> para linea en blanco-->
+                        <span id="edadSpan"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="paisNacimiento">País de Nacimiento:</label>
+                        <select class="form-select" id="paisNacimiento" name="paisNacimiento" required>
+                            <option value="" disabled selected>Selecciona un país</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Argentina">Argentina</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudadNacimiento">Ciudad de Nacimiento:</label>
+                        <select class="form-select" id="ciudadNacimiento" name="ciudadNacimiento" required>
+                            <option value="" disabled selected>Selecciona una ciudad</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="guardar">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form id="registrarConsulta">
+                <h2>Registrar Consulta</h2>
+                <div class="form-group">
+                    <label for="comboPersonas">Selecciona una persona:</label>
+                    <select class="form-select" id="comboPersonas" name="comboPersonas" required disabled>
+                        <option value="" disabled selected>Selecciona una persona</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="consulta">Fecha y Hora de Consulta:</label>
+                    <input type="datetime-local" class="form-control" id="consulta" required>
+                </div>
+                <button type="button" class="btn btn-primary" id="guardarConsulta">Registrar Consulta</button>
+                <button type="button" class="btn btn-primary" id="limpiarTodo">Limpiar Todo</button>
+            </form>
+            <div class="form-group">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="tieneHijo" disabled>
+                    <label class="form-check-label" for="tieneHijo">¿Tiene hijos?</label>
+                </div>
+            </div>
+            <div class="col-md-12" id="registrarHijosSection" style="display: none;">
+                <form id="registrarHijos">
+                    <h2>Registrar Hijos</h2>
+                    <div class="form-group">
+                        <label for="hijos">Hijo:</label>
+                        <input type="text" class="form-control" id="hijos" name="hijos">
+                    </div>
+                    <button type="button" class="btn btn-primary" id="guardarHijos">Registrar Hijo</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Historial de Consultas</h2>
+            <div class="form-group">
+                <table id="historialConsultas" class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Aquí se mostrarán las filas de consulta -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>Parentesco</h2>
+            <div class="form-group">
+                <table class="table table-striped" id="tablaHijos">
+                    <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Hijo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!-- Aquí se mostrarán las filas de consulta -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-light text-center">
+    <div class="p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2024 Historia Clínica. Todos los derechos reservados.</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
