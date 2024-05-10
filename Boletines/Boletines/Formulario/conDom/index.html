@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Dinámico</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1>Formulario</h1>
+    <form id="pre">
+        <div id="config-form">
+            <div id="inicio">
+                <label for="num-questions">Número de Preguntas:</label>
+                <input type="number" id="num-questions" class="form-control" required>
+                <button id="config-submit" class="btn btn-primary mt-3" type="submit">Configurar</button>
+            </div>
+        </div>
+    </form>
+    <div id="respuestas" style="display: none;">
+        <h2>Respuestas del Cuestionario</h2>
+        <textarea class="form-control" rows="5" readonly></textarea>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

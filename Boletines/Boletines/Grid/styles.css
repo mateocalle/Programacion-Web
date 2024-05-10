@@ -1,0 +1,34 @@
+.grid-container{
+    border: 2px solid black;
+    background-color: cyan;
+
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "item-1 item-2 item-2"
+    "item-1 item-3 item-3"
+    "item-1 item-3 item-3"
+    "item-1 item-4 item-4";
+}
+
+.grid-item{
+    border: 1px solid red;
+}
+
+.grid-container > .item-1{
+    background-color: blue;
+    grid-area: item-1;
+}
+.grid-container > .item-2{
+    background-color: palegoldenrod;
+    grid-area: item-2;
+}
+.grid-container > .item-3{
+    background-color: purple;
+    grid-area: item-3;
+}
+.grid-container > .item-4{
+    background-color: green;
+    grid-area: item-4;
+}

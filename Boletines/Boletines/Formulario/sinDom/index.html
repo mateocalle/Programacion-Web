@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulario</h2>
+    <form id="configForm">
+        <div class="form-group">
+            <label for="numPreguntas">Número de preguntas:</label>
+            <input type="number" class="form-control" id="numPreguntas" name="numPreguntas">
+        </div>
+        <button type="button" class="btn btn-primary mt-3" id="btn_config" onclick="crearFormulario()">Configurar</button>
+    </form>
+
+    <div id="formulario"></div>
+
+    <div id="respuestas" style="display: none;">
+        <h2>Respuestas del Cuestionario</h2>
+        <textarea class="form-control" rows="5" readonly></textarea>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

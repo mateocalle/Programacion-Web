@@ -1,0 +1,40 @@
+#container{
+    display: grid;
+    grid-template-areas:
+            "nav header header"
+            "nav section aside"
+            "nav section2 aside"
+            "nav footer footer";
+    grid-template-columns: 130px 500px 100px;
+    grid-template-rows: 100px 150px 150px 70px;
+}
+
+#container > nav{
+    grid-area: nav;
+}
+
+#container > header{
+    grid-area: header;
+}
+
+#container > #section1{
+    grid-area: section;
+}
+
+#container > #section2{
+    grid-area: section2;
+}
+
+#container > aside{
+    grid-area: aside;
+}
+
+#container > footer{
+    grid-area: footer;
+}
+
+nav, header, section, aside, footer{
+    margin: 5px;
+    background-color: yellow;
+    padding: 20px;
+}
