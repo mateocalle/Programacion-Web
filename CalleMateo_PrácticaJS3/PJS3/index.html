@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica JS3 - Mantenimiento de Personas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<header class="text-white text-center p-3" style="background-color: #789fd7">
+    <h1>Mantenimiento de Personas</h1>
+</header>
+
+<div class="container mt-4 mb-4" id="contenedor">
+    <div class="row">
+        <div class="col-md-8">
+            <form id="form-campos">
+                <div class="row">
+                    <div class="col-md-12 mb-3 mt-1">
+                        <input type="file" id="foto" style="display: none;">
+                        <img id="preview"
+                             src="https://static.vecteezy.com/system/resources/thumbnails/024/983/914/small/simple-user-default-icon-free-png.png"
+                             alt="" class="rounded-circle"
+                             style="height: 150px; width: 150px; object-fit: cover; cursor: pointer;">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre" id="nombre"
+                               required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el apellido" id="apellido"
+                               required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cedula">Cédula:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese la cédula" id="cedula"
+                               required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="genero">Género:</label>
+                        <select class="form-select" id="genero" required>
+                            <option value="default">Seleccionar género</option>
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="correo">Correo:</label>
+                        <input type="email" class="form-control" placeholder="Ingrese el correo" id="correo"
+                               required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                        <input type="date" class="form-control" id="fechaNacimiento" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="ciudad">Ciudad:</label>
+                        <input type="text" class="form-control" placeholder="Ingrese la ciudad" id="ciudad" required>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="form-control" placeholder="Ingrese el teléfono" id="telefono" name="telefono" pattern="\d{7}|\d{10}" title="El teléfono debe tener 7 o 10 dígitos numéricos."
+                               required>
+                    </div>
+                    <div class="col-md-12 mb-3 d-flex justify-content-center">
+                        <button type="submit" id="btnGuardar" class="btn btn-primary mt-4 me-2">Guardar</button>
+                        <button type="button" id="btnEditar" class="btn btn-primary mt-4 me-2" disabled>Editar</button>
+                        <button type="button" id="btnEliminar" class="btn btn-primary mt-4 me-2" disabled>Eliminar</button>
+                        <button type="button" id="btnLimpiar" class="btn btn-primary mt-4">Limpiar</button>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-12 mb-5">
+                <h2>Local Storage</h2>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cédula</th>
+                        <th>Género</th>
+                        <th>Correo</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Ciudad</th>
+                        <th>Teléfono</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tablaLocal">
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <h2>Session Storage</h2>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Cédula</th>
+                        <th>Género</th>
+                        <th>Correo</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Ciudad</th>
+                        <th>Teléfono</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tablaSession">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-12 mb-3">
+                    <label for="buscarLocal">Buscar en Local Storage:</label>
+                    <select class="form-select" id="buscarLocal">
+                        <option value="default">Seleccione una persona</option>
+                    </select>
+                </div>
+                <div class="col-md-12">
+                    <label for="buscarSession">Buscar en Session Storage:</label>
+                    <select class="form-select" id="buscarSession">
+                        <option value="default">Seleccione una persona</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-white text-center p-2 mt-5" style="background-color: rgba(0, 0, 0, 0.2);">
+    <p>&copy; 2024 - Mantenimiento de Personas</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
