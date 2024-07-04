@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Re-Vibe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/logo/revibes.svg">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+<!--Gif de cargando-->
+<div class="loader">
+    <div class="loader-icon">
+        <img src="assets/img/loader/loadingPP.gif" alt="loader"/>
+    </div>
+</div>
+<!--Fin gif cargando-->
+<!--Inicio HOME-->
+<header class="top-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-6 col-sm-6 col-md-3">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                    Cuenca, Ecuador, 010101
+                </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 ms-auto text-end">
+                <a href="main/log-in.html" class="text-decoration-none text-white">Iniciar Sesión</a>
+                <a href="main/sign-in.html" class="text-decoration-none text-white ms-2">Registrarse</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" id="header-center">
+    <div class="row align-items-center">
+        <div class="col-12 col-sm-2 col-md-3">
+            <!-- Logo -->
+            <a href="#"><img src="assets/img/logo/revibes.png" alt="Logo" class="img-fluid"></a>
+            <!--            <a href="#"><img src="assets/img/logo/image.png" alt="Logo" class="img-fluid" style="width: 60px"></a>-->
+        </div>
+        <div class="col-12 col-sm-6 col-md-6">
+            <!-- Barra de búsqueda -->
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="Buscar">
+                <button class="btn btn-outline-secondary w-25" type="button">Buscar</button>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-3 text-end" id="header-center-right">
+            <!-- Iconos -->
+            <button>
+                <a href="main/wishlist.html" title="Ver tus favoritos">
+                    <svg width="25" height="23" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z"
+                              stroke="#1A1A1A" stroke-width="1.5"/>
+                    </svg>
+                </a>
+            </button>
+            <button>
+                <a href="main/loadProduct.html" title="Subir un producto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" fill="" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+                              stroke="#00000" stroke-width="1.5"/>
+                        <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"
+                              stroke="#00000" stroke-width="1.5"/>
+                    </svg>
+                </a>
+            </button>
+            <button>
+                <a href="main/user-dashboard.html" title="Dashboard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="none" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"
+                              stroke="#1A1A1A" stroke-width="1"/>
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" id="categorias-navbar">
+        <div class="container-xl">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+                    aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownHombre" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Hombre</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownHombre">
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="main/shop.html">Camisas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Polos</a>
+                                    <a class="dropdown-item" href="main/shop.html">Pantalones</a>
+                                    <a class="dropdown-item" href="main/shop.html">Jeans</a>
+                                    <a class="dropdown-item" href="main/shop.html">Shorts</a>
+                                    <a class="dropdown-item" href="main/shop.html">Trajes</a>
+                                    <a class="dropdown-item" href="main/shop.html">Chaquetas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa interior</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa deportiva</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Calzado</div>
+                                    <a class="dropdown-item" href="main/shop.html">Deportivos</a>
+                                    <a class="dropdown-item" href="main/shop.html">Casuales</a>
+                                    <a class="dropdown-item" href="main/shop.html">Formales</a>
+                                    <a class="dropdown-item" href="main/shop.html">Botas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Sandalias</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="main/shop.html">Gorrasy sombrerps</a>
+                                    <a class="dropdown-item" href="main/shop.html">Bufandas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Corbatas y pajaritas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Cinturones</a>
+                                    <a class="dropdown-item" href="main/shop.html">Relojes</a>
+                                    <a class="dropdown-item" href="main/shop.html">Gafas de sol</a>
+                                    <a class="dropdown-item" href="main/shop.html">Bolsos y mochilas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Cadenas y manillas</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMujer" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Mujer</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMujer">
+                            <!--          <a class="dropdown-item" href="#">What we do</a>-->
+                            <!--          <a class="dropdown-item" href="#">How we fit your needs</a>-->
+                            <!--          <div class="dropdown-divider"></div>-->
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="main/shop.html">Blusas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Vestidos</a>
+                                    <a class="dropdown-item" href="main/shop.html">Pantalones</a>
+                                    <a class="dropdown-item" href="main/shop.html">Faldas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Shorts</a>
+                                    <a class="dropdown-item" href="main/shop.html">Trajes</a>
+                                    <a class="dropdown-item" href="main/shop.html">Chaquetas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa interior</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa deportiva</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa de baño</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Calzado</div>
+                                    <a class="dropdown-item" href="main/shop.html">Deportivos</a>
+                                    <a class="dropdown-item" href="main/shop.html">Casuales</a>
+                                    <a class="dropdown-item" href="main/shop.html">Formales</a>
+                                    <a class="dropdown-item" href="main/shop.html">Botas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Sandalias</a>
+                                    <a class="dropdown-item" href="main/shop.html">Tacones</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="main/shop.html">Gorras y sombrerps</a>
+                                    <a class="dropdown-item" href="main/shop.html">Bufandas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Cinturones</a>
+                                    <a class="dropdown-item" href="main/shop.html">Relojes</a>
+                                    <a class="dropdown-item" href="main/shop.html">Gafas de sol</a>
+                                    <a class="dropdown-item" href="main/shop.html">Bolsos y mochilas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Joyería</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownNiños" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Niños</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownNiños">
+                            <!--          <a class="dropdown-item" href="#">What we do</a>-->
+                            <!--          <a class="dropdown-item" href="#">How we fit your needs</a>-->
+                            <!--          <div class="dropdown-divider"></div>-->
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="main/shop.html">Camisas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Pantalones</a>
+                                    <a class="dropdown-item" href="main/shop.html">Jeans</a>
+                                    <a class="dropdown-item" href="main/shop.html">Shorts</a>
+                                    <a class="dropdown-item" href="main/shop.html">Faldas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Vestidos</a>
+                                    <a class="dropdown-item" href="main/shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Chaquetas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa interior</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa deportiva</a>
+                                    <a class="dropdown-item" href="main/shop.html">Ropa de baño</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Calzado</div>
+                                    <a class="dropdown-item" href="main/shop.html">Deportivos</a>
+                                    <a class="dropdown-item" href="main/shop.html">Casuales</a>
+                                    <a class="dropdown-item" href="main/shop.html">Formales</a>
+                                    <a class="dropdown-item" href="main/shop.html">Botas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Sandalias</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="main/shop.html">Gorras y sombrerps</a>
+                                    <a class="dropdown-item" href="main/shop.html">Bufandas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Cinturones</a>
+                                    <a class="dropdown-item" href="main/shop.html">Gafas de sol</a>
+                                    <a class="dropdown-item" href="main/shop.html">Bolsos y mochilas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMascotas" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Mascotas</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMascotas">
+                            <!--          <a class="dropdown-item" href="#">What we do</a>-->
+                            <!--          <a class="dropdown-item" href="#">How we fit your needs</a>-->
+                            <!--          <div class="dropdown-divider"></div>-->
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="main/shop.html">Abrigos</a>
+                                    <a class="dropdown-item" href="main/shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Disfraces</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="main/shop.html">Collares</a>
+                                    <a class="dropdown-item" href="main/shop.html">Correas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Arnés</a>
+                                    <a class="dropdown-item" href="main/shop.html">Jugeutes</a>
+                                    <a class="dropdown-item" href="main/shop.html">Camas</a>
+                                    <a class="dropdown-item" href="main/shop.html">Placas de identificación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="main/contact.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="main/about.html">Sobre nosotros</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 700px; margin-top: 30px" id="carruselPubli">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="https://www.footlocker.com/product/nike-ja-morant-one-mens/D6565300.html" target="_blank">
+                        <img src="https://sneakernews.com/wp-content/uploads/2023/09/nike-ja-1-halloween-official-images-FD6565-300-9.jpg?"
+                             class="d-block w-100 carousel-img" alt="First slide">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.footlocker.com/product/~/Q4796800.html" target="_blank">
+                        <img src="https://images.footlocker.com/is/image/EBFL2/Q4796800_01?wid=500&hei=500&fmt=png-alpha"
+                             class="d-block  w-100 carousel-img" alt="Second slide">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="https://www.adidas.com/us/ae-1-georgia-red-clay-basketball-shoes/IF1863.html" target="_blank">
+                        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F09%2Fadidas-ae1-anthony-edwards-first-signature-sneaker-release-info-000.jpg?w=960&cbr=1&q=90&fit=max"
+                             class="d-block w-100 carousel-img" alt="Third slide">
+                    </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-xxl mt-3" id="home-products">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="pills-men-tab" data-bs-toggle="pill" href="#pills-men" role="tab"
+                   aria-controls="pills-men" aria-selected="true">Hombres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-women-tab" data-bs-toggle="pill" href="#pills-women" role="tab"
+                   aria-controls="pills-women" aria-selected="false">Mujeres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-kids-tab" data-bs-toggle="pill" href="#pills-kids" role="tab"
+                   aria-controls="pills-kids" aria-selected="false">Niños</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pills-pet-tab" data-bs-toggle="pill" href="#pills-pet" role="tab"
+                   aria-controls="pills-pet" aria-selected="false">Mascotas</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-men" role="tabpanel" aria-labelledby="pills-men-tab">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Repeat the following block 12 times, once for each product -->
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <!--                                    <i class="fas fa-heart heart-icon" title="Añadir a tus favoritos"></i>-->
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_920121-MEC44166480552_112020-O.webp"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_920121-MEC44166480552_112020-O.webp"
+                                         class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title ">Product Title</h5>
+                                        <p class="card-text">$59.99</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_934706-MLM75398664814_042024-O.webp"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_742494-MLM73824542342_012024-O.webp"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://m.media-amazon.com/images/I/41l0ntMQzwL._AC_.jpg"
+                                         class="card-img-top"
+                                         alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://www.ubuy.ec/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjM1MmE4ZmQwYTYwNjIyMzQ3Njc4OWUzLWhhc2J1bGxhLXRlYW0tbmV3LWxvZ28tbWVyY2gtdC1zaGlydC10ZWUuanBn.jpg"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/a517f349-3a4c-4f7f-b11f-97952130fd00.0be9ad4d833b604a9f4f92a000dddc8c.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End of block -->
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-women" role="tabpanel" aria-labelledby="pills-women-tab">
+                <div class="container">
+                    <div class="row">
+                        <!-- Repeat the following block 12 times, once for each product -->
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://www.eline.com.ec/wp-content/uploads/Polo_mujer_coral.jpg"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://www.eline.com.ec/wp-content/uploads/Polo_mujer_morado.jpg"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End of block -->
+                    </div>
+                </div>
+                <!-- Add your images here -->
+            </div>
+            <div class="tab-pane fade" id="pills-kids" role="tabpanel" aria-labelledby="pills-kids-tab">
+                <div class="container">
+                    <div class="row">
+                        <!-- Repeat the following block 12 times, once for each product -->
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://bataec.vteximg.com.br/arquivos/ids/241052-302-302/2819864_1.jpg?v=638176257551930000"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLsDVoFV27NV5ido2jplps6ta45giSKSFjCg&usqp=CAU"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End of block -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-pet" role="tabpanel" aria-labelledby="pills-pet-tab">
+                <div class="container">
+                    <div class="row">
+                        <!-- Repeat the following block 12 times, once for each product -->
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://novicompu.vtexassets.com/arquivos/ids/162936/1KSM489.jpg?v=637828869534230000"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <a href="main/product-detail.html" class="text-decoration-none">
+                                <div class="card">
+                                    <i class="bi bi-heart-fill heart-icon" title="Añadir a tus favoritos"></i>
+                                    <img src="https://i.ebayimg.com/images/g/yP8AAOSwtnpXmaZf/s-l960.webp"
+                                         class="card-img-top" alt="Product name">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Product name</h5>
+                                        <p class="card-text">Product price</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- End of block -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container mt-5">
+    <div class="row" id="rowPublicidad">
+        <div class="col-md-4">
+            <a href="https://www.adidas.com/ec/es" target="_blank">
+                <div class="card">
+                    <img src="https://ams3.digitaloceanspaces.com/graffica/2022/12/Adidas-Logo-1971-1024x576.jpeg"
+                         class="card-img-top" alt="Imagen 1">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="https://www.nike.com/us/es/w/cristiano-ronaldo-69np1" target="_blank">
+                <div class="card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/010/994/287/non_2x/cr7-symbol-logo-black-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg"
+                         class="card-img-top" alt="Product name">
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="https://www.nike.com/mx/launch/t/air-jordan-1-low-travis-scott-sail-ridgerock" target="_blank">
+                <div class="card">
+                    <img src="https://cdn.sanity.io/images/c1chvb1i/production/f25ceb045a1ed1c8a65988dac9660df70f7eecad-1005x670.jpg?w=1760&h=1173&q=75&fit=max&auto=format"
+                         class="card-img-top" alt="Imagen 2">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light" style="padding-bottom: 20px">
+    <div class="container text-center">
+        <div class="row">
+            <!-- Columna de la izquierda con la imagen -->
+            <div class="col-sm-3 col-md-3">
+                <img src="https://parspng.com/wp-content/uploads/2023/08/clothespng.parspng.com-9-1024x683.png"
+                     class="centered-image" style="height: 300px"
+                     alt="Imagen Izquierda">
+            </div>
+
+            <!-- Columna del medio con el texto y el botón -->
+            <div class="col d-flex align-items-center justify-content-center vertical-stack">
+                <h2 class="text-large">¿Quieres hacer limpieza de armario?</h2>
+                <p class="text-small">Aquí hay mucha gente interesada en esto</p>
+                <a href="main/loadProduct.html" class="text-white text-decoration-none"><button class="btn btn-primary">Vender
+                    ya!</button></a>
+            </div>
+
+            <!-- Columna de la derecha con la imagen -->
+            <div class="col-sm-3 col-md-3">
+                <img src="https://png.pngtree.com/png-clipart/20231018/original/pngtree-attractive-woman-trying-new-clothing-on-white-casual-picture-image_13179103.png"
+                     class="centered-image" style="height: 300px" alt="Imagen Derecha">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light">
+    <div class="container" id="opiniones">
+        <h2 id="opiniones-titulo">Lo que opinan nuestros clientes</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                                    <i class="fas fa-signature fa-3x opinion-icon"></i> <!-- Icono de usuario -->
+                                    <p>"Me encanta la calidad de los productos, siempre encuentro lo que necesito."</p>
+                                </div>
+                            </div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-HS0q0bSJtzHZHi5ttz_TRbmu3pHR2c7DN_UbgblnLQ&s"
+                                 class="rounded-circle" alt="Cliente 1">
+                            <p class="name-text">Enner Valencia</p>
+                            <p class="role-text">Comprador</p>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                                    <i class="fas fa-signature fa-3x opinion-icon"></i> <!-- Icono de usuario -->
+                                    <p>"El servicio al cliente es excelente, siempre resuelven mis dudas
+                                        rápidamente."</p>
+                                </div>
+                            </div>
+                            <img src="https://img.a.transfermarkt.technology/portrait/big/592735-1582726152.jpg?lm=1"
+                                 class="rounded-circle" alt="Cliente 2">
+                            <p class="name-text">Gonzalo Plata</p>
+                            <p class="role-text">Vendedor</p>
+                        </div>
+                        <!-- Columna 3 -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                                    <i class="fas fa-signature fa-3x opinion-icon"></i> <!-- Icono de usuario -->
+                                    <p>"La plataforma es muy fácil de usar, puedo comprar y vender sin problemas."</p>
+                                </div>
+                            </div>
+                            <img src="https://www.elcomercio.com/wp-content/uploads/2024/04/Posteo-Kendry-1024x683.jpg"
+                                 class="rounded-circle" alt="Cliente 3">
+                            <p class="name-text">Kendry Paez</p>
+                            <p class="role-text">Comprador</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrega más elementos de carrusel según sea necesario -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Columna 1 -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                                    <i class="fas fa-signature fa-3x opinion-icon"></i> <!-- Icono de usuario -->
+                                    <p>"Me encanta la calidad de los productos, siempre encuentro lo que necesito."</p>
+                                </div>
+                            </div>
+                            <img src="https://i1.sndcdn.com/artworks-000116719590-pmrtyu-t500x500.jpg"
+                                 class="rounded-circle" alt="Cliente 1">
+                            <p class="name-text">Lebron James</p>
+                            <p class="role-text">Comprador</p>
+                        </div>
+                        <!-- Columna 2 -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                                    <i class="fas fa-signature fa-3x opinion-icon"></i> <!-- Icono de usuario -->
+                                    <p>"El servicio al cliente es excelente, siempre resuelven mis dudas
+                                        rápidamente."</p>
+                                </div>
+                            </div>
+                            <img src="https://cdn-5.motorsport.com/images/mgl/6D1XbeV0/s800/max-verstappen-red-bull-racing.jpg"
+                                 class="rounded-circle" alt="Cliente 2">
+                            <p class="name-text">Max Verstappen</p>
+                            <p class="role-text">Vendedor</p>
+                        </div>
+                        <!-- Columna 3 -->
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card">
+                                <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                                    <i class="fas fa-signature fa-3x opinion-icon"></i> <!-- Icono de usuario -->
+                                    <p>"La plataforma es muy fácil de usar, puedo comprar y vender sin problemas."</p>
+                                </div>
+                            </div>
+                            <img src="https://ih0.redbubble.net/image.2990817857.2109/raf,360x360,075,t,fafafa:ca443f4786.jpg"
+                                 class="rounded-circle" alt="Cliente 3">
+                            <p class="name-text">Dwayne Johnson</p>
+                            <p class="role-text">Comprador</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"-->
+            <!--                    data-bs-slide="prev">-->
+            <!--                <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+            <!--                <span class="visually-hidden">Anterior</span>-->
+            <!--            </button>-->
+            <!--            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"-->
+            <!--                    data-bs-slide="next">-->
+            <!--                <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+            <!--                <span class="visually-hidden">Siguiente</span>-->
+            <!--            </button>-->
+        </div>
+    </div>
+</div>
+
+<!--<div class="chat-button" id="chat-button">Chat</div>-->
+
+<div id="chatbot-container">
+    <div class="chat-button" id="chat-button"></div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-title">
+            ChatBot
+            <i class="fas fa-times" id="close-chat"></i>
+        </div>
+        <div class="conversation" id="conversation">
+            <!-- Conversación del chat -->
+        </div>
+        <form class="message-form" id="message-form">
+            <div class="input-group">
+                <input type="text" class="form-control" id="message-input" placeholder="Escribe un mensaje...">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="text-center text-lg-start text-white" style="background-color: #948979">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Re-Vibe</h6>
+                <p>
+                    Somos tu destino para moda nueva y usada en línea. Aquí, hacemos lo que queremos: exploramos estilos
+                    únicos y redefinimos la moda.
+                </p>
+            </div>
+            <hr class="w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+                <p><a href="..." class="text-white text-decoration-none">Hombre</a></p>
+                <p><a href="..." class="text-white text-decoration-none">Mujer</a></p>
+                <p><a href="..." class="text-white text-decoration-none">Niños</a></p>
+                <p><a href="..." class="text-white text-decoration-none">Mascotas</a></p>
+            </div>
+            <hr class="w-100 d-md-none">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contáctanos</h6>
+                <p><i class="fas fa-home mr-3"></i> Cuenca, Azuay 010101, EC</p>
+                <p><i class="fas fa-envelope mr-3"></i> revibe@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +593 96 900 5822</p>
+                <p><i class="fas fa-phone mr-3"></i> +593 99 551 3071</p>
+                <p><i class="fas fa-phone mr-3"></i> +593 96 902 4827</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Síguenos</h6>
+                <div class="d-flex justify-content-center">
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-google"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Re-Vibe &copy; 2024. All Rights Reserved.
+    </div>
+</footer>
+<!--End HOME-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/chatbot.js"></script>
+<!--<script src="js/agregar-wishlist.js"></script>-->
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dashboard | Re-Vibe</title>
+    <link rel="icon" href="../assets/img/logo/revibes.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<!--Gif de cargando-->
+<div class="loader">
+    <div class="loader-icon">
+        <img src="../assets/img/loader/loadingPP.gif" alt="loader"/>
+    </div>
+</div>
+<!--Fin gif cargando-->
+<!--Inicio HOME-->
+<header class="top-header">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-6 col-sm-6 col-md-3 ">
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>
+                    Cuenca, Ecuador, 010101
+                </a>
+            </div>
+            <div class="col-6 col-sm-6 col-md-3 ms-auto text-end">
+                <a href="log-in.html" class="text-decoration-none text-white">Iniciar Sesión</a>
+                <a href="sign-in.html" class="text-decoration-none text-white ms-2">Registrarse</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container" id="header-center">
+    <div class="row align-items-center">
+        <div class="col-12 col-sm-2 col-md-3">
+            <!-- Logo -->
+            <a href="../home.html"><img src="../assets/img/logo/revibes.png" alt="Logo" class="img-fluid"></a>
+            <!--            <a href="#"><img src="assets/img/logo/image.png" alt="Logo" class="img-fluid" style="width: 60px"></a>-->
+        </div>
+        <div class="col-12 col-sm-6 col-md-6">
+            <!-- Barra de búsqueda -->
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="Buscar">
+                <button class="btn btn-outline-secondary w-25" type="button">Buscar</button>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-3 text-end" id="header-center-right">
+            <!-- Iconos -->
+            <button>
+                <a href="wishlist.html" title="Ver tus favoritos">
+                    <svg width="25" height="23" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.9996 16.5451C-6.66672 7.3333 4.99993 -2.6667 9.9996 3.65668C14.9999 -2.6667 26.6666 7.3333 9.9996 16.5451Z"
+                              stroke="#1A1A1A" stroke-width="1.5"/>
+                    </svg>
+                </a>
+            </button>
+            <button>
+                <a href="loadProduct.html" title="Subir un producto">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" fill="" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"
+                              stroke="#00000" stroke-width="1.5"/>
+                        <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"
+                              stroke="#00000" stroke-width="1.5"/>
+                    </svg>
+                </a>
+            </button>
+            <button>
+                <a href="account-setting.html" title="Configuración de la cuenta">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="none" viewBox="0 0 16 16">
+                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"
+                              stroke="#1A1A1A" stroke-width="1"/>
+                    </svg>
+                </a>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" id="categorias-navbar">
+        <div class="container-xl">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+                    aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownHombre" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Hombre</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownHombre">
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="shop.html">Camisas</a>
+                                    <a class="dropdown-item" href="shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="shop.html">Polos</a>
+                                    <a class="dropdown-item" href="shop.html">Pantalones</a>
+                                    <a class="dropdown-item" href="shop.html">Jeans</a>
+                                    <a class="dropdown-item" href="shop.html">Shorts</a>
+                                    <a class="dropdown-item" href="shop.html">Trajes</a>
+                                    <a class="dropdown-item" href="shop.html">Chaquetas</a>
+                                    <a class="dropdown-item" href="shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa interior</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa deportiva</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Calzado</div>
+                                    <a class="dropdown-item" href="shop.html">Deportivos</a>
+                                    <a class="dropdown-item" href="shop.html">Casuales</a>
+                                    <a class="dropdown-item" href="shop.html">Formales</a>
+                                    <a class="dropdown-item" href="shop.html">Botas</a>
+                                    <a class="dropdown-item" href="shop.html">Sandalias</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="shop.html">Gorrasy sombrerps</a>
+                                    <a class="dropdown-item" href="shop.html">Bufandas</a>
+                                    <a class="dropdown-item" href="shop.html">Corbatas y pajaritas</a>
+                                    <a class="dropdown-item" href="shop.html">Cinturones</a>
+                                    <a class="dropdown-item" href="shop.html">Relojes</a>
+                                    <a class="dropdown-item" href="shop.html">Gafas de sol</a>
+                                    <a class="dropdown-item" href="shop.html">Bolsos y mochilas</a>
+                                    <a class="dropdown-item" href="shop.html">Cadenas y manillas</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMujer" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Mujer</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMujer">
+                            <!--          <a class="dropdown-item" href="#">What we do</a>-->
+                            <!--          <a class="dropdown-item" href="#">How we fit your needs</a>-->
+                            <!--          <div class="dropdown-divider"></div>-->
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="shop.html">Blusas</a>
+                                    <a class="dropdown-item" href="shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="shop.html">Vestidos</a>
+                                    <a class="dropdown-item" href="shop.html">Pantalones</a>
+                                    <a class="dropdown-item" href="shop.html">Faldas</a>
+                                    <a class="dropdown-item" href="shop.html">Shorts</a>
+                                    <a class="dropdown-item" href="shop.html">Trajes</a>
+                                    <a class="dropdown-item" href="shop.html">Chaquetas</a>
+                                    <a class="dropdown-item" href="shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa interior</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa deportiva</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa de baño</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Calzado</div>
+                                    <a class="dropdown-item" href="shop.html">Deportivos</a>
+                                    <a class="dropdown-item" href="shop.html">Casuales</a>
+                                    <a class="dropdown-item" href="shop.html">Formales</a>
+                                    <a class="dropdown-item" href="shop.html">Botas</a>
+                                    <a class="dropdown-item" href="shop.html">Sandalias</a>
+                                    <a class="dropdown-item" href="shop.html">Tacones</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="shop.html">Gorras y sombrerps</a>
+                                    <a class="dropdown-item" href="shop.html">Bufandas</a>
+                                    <a class="dropdown-item" href="shop.html">Cinturones</a>
+                                    <a class="dropdown-item" href="shop.html">Relojes</a>
+                                    <a class="dropdown-item" href="shop.html">Gafas de sol</a>
+                                    <a class="dropdown-item" href="shop.html">Bolsos y mochilas</a>
+                                    <a class="dropdown-item" href="shop.html">Joyería</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownNiños" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Niños</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownNiños">
+                            <!--          <a class="dropdown-item" href="#">What we do</a>-->
+                            <!--          <a class="dropdown-item" href="#">How we fit your needs</a>-->
+                            <!--          <div class="dropdown-divider"></div>-->
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="shop.html">Camisas</a>
+                                    <a class="dropdown-item" href="shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="shop.html">Pantalones</a>
+                                    <a class="dropdown-item" href="shop.html">Jeans</a>
+                                    <a class="dropdown-item" href="shop.html">Shorts</a>
+                                    <a class="dropdown-item" href="shop.html">Faldas</a>
+                                    <a class="dropdown-item" href="shop.html">Vestidos</a>
+                                    <a class="dropdown-item" href="shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="shop.html">Chaquetas</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa interior</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa deportiva</a>
+                                    <a class="dropdown-item" href="shop.html">Ropa de baño</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Calzado</div>
+                                    <a class="dropdown-item" href="shop.html">Deportivos</a>
+                                    <a class="dropdown-item" href="shop.html">Casuales</a>
+                                    <a class="dropdown-item" href="shop.html">Formales</a>
+                                    <a class="dropdown-item" href="shop.html">Botas</a>
+                                    <a class="dropdown-item" href="shop.html">Sandalias</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="shop.html">Gorras y sombrerps</a>
+                                    <a class="dropdown-item" href="shop.html">Bufandas</a>
+                                    <a class="dropdown-item" href="shop.html">Cinturones</a>
+                                    <a class="dropdown-item" href="shop.html">Gafas de sol</a>
+                                    <a class="dropdown-item" href="shop.html">Bolsos y mochilas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMascotas" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Mascotas</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMascotas">
+                            <!--          <a class="dropdown-item" href="#">What we do</a>-->
+                            <!--          <a class="dropdown-item" href="#">How we fit your needs</a>-->
+                            <!--          <div class="dropdown-divider"></div>-->
+                            <div class="d-md-flex align-items-start justify-content-start">
+                                <div>
+                                    <div class="dropdown-header">Ropa</div>
+                                    <a class="dropdown-item" href="shop.html">Abrigos</a>
+                                    <a class="dropdown-item" href="shop.html">Sudaderas</a>
+                                    <a class="dropdown-item" href="shop.html">Camisetas</a>
+                                    <a class="dropdown-item" href="shop.html">Disfraces</a>
+                                </div>
+                                <div>
+                                    <div class="dropdown-header">Accesorios</div>
+                                    <a class="dropdown-item" href="shop.html">Collares</a>
+                                    <a class="dropdown-item" href="shop.html">Correas</a>
+                                    <a class="dropdown-item" href="shop.html">Arnés</a>
+                                    <a class="dropdown-item" href="shop.html">Jugeutes</a>
+                                    <a class="dropdown-item" href="shop.html">Camas</a>
+                                    <a class="dropdown-item" href="shop.html">Placas de identificación</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../main/contact.html">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">Sobre nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav id="breadcrum" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <div class="container mt-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="../home.html"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="#"
+                                                                          class="text-decoration-none">Dashboard</a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+</div>
+<!-- Dashboard start  -->
+<div class="container">
+    <div class="container">
+        <div class="row container">
+            <div class="col-lg-3 mt-5">
+                <ul class="list-group w-100">
+                    <!-- Dashboard -->
+                    <a href="user-dashboard.html"
+                       class="w-100 h-100 p-3 d-flex align-items-center list-group-item list-group-item-action list-group-item-light active">
+                        <img class="icono-account me-3" src="../assets/img/account-setting/dashboard.svg"
+                             alt="dashboard"/>
+                        <h6>Dashboard</h6>
+                    </a>
+                    <!-- Historial -->
+                    <a href="order-history.html"
+                       class="w-100 h-100 p-3 d-flex align-items-center list-group-item list-group-item-action list-group-item-light">
+                        <img class="icono-account me-3" src="../assets/img/account-setting/history.svg" alt="history"/>
+                        <h6>Historial de pedidos</h6>
+                    </a>
+                    <!-- Lista de deseos -->
+                    <a href="wishlist.html"
+                       class="w-100 h-100 p-3 d-flex align-items-center list-group-item list-group-item-action list-group-item-light">
+                        <img class="icono-account me-3" src="../assets/img/account-setting/heart.svg" alt="wishlist"/>
+                        <h6>Lista de deseos</h6>
+                    </a>
+                    <!-- Configuración de la cuenta -->
+                    <a href="account-setting.html"
+                       class="w-100 h-100 p-3 d-flex align-items-center list-group-item list-group-item-action list-group-item-light">
+                        <img class="icono-account me-3" src="../assets/img/account-setting/configuration.svg"
+                             alt="settings"/>
+                        <h6>Configuración de la cuenta</h6>
+                    </a>
+                    <!-- Cerrar sesión -->
+                    <a href="log-in.html"
+                       class="w-100 h-100 p-3 d-flex align-items-center list-group-item list-group-item-action list-group-item-light">
+                        <img class="icono-account me-3" src="../assets/img/account-setting/log-out.svg" alt="logout"/>
+                        <h6>Cerrar sesión</h6>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-lg-9 mt-5">
+                <div class="container">
+                    <!-- Información de usuario -->
+                    <div class="row">
+                        <!-- Perfil de usuario  -->
+                        <div class="col-lg-7 mb-3">
+                            <div class="card h-100 justify-content-center align-items-center text-center">
+                                <div class="card-img-top">
+                                    <img class="img-fluid mt-3" id="imagenUsuarioDashboard"
+                                         src="https://i1.sndcdn.com/artworks-2LWICfmHSXh2joGT-zcoJWA-t500x500.jpg"
+                                         alt="imagenUsuario"/>
+                                </div>
+                                <div class="card-body">
+                                    <h5>Agustin Calderon</h5>
+                                    <p class="card-text text-secondary">Me encanta esta vaina </p>
+                                    <a href="account-setting.html" class="fs-6">Editar Perfil</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dirección de facturación -->
+                        <div class="col-lg-5 mb-3">
+                            <div class="card h-100 justify-content-center">
+                                <div class="card-body">
+                                    <h2 class="card-title fs-4">Dirección de facturación</h2>
+                                    <div class="card-text">
+                                        <h5 class="fs-5">Agustin Calderon</h5>
+                                        <p class="text-secondary">Parque Calderon, Cuenca, Ecuador</p>
+                                        <p class="fs-6 text-secondary">don.pollo@gmail.com</p>
+                                        <p class="fs-6 text-secondary">(593) 099 150 2872</p>
+                                    </div>
+                                    <a href="account-setting.html#direccionFacturacion" class="fs-6">Editar
+                                        Dirección</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Historial de pedidos  -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <div class="card-title d-flex justify-content-between">
+                                <h2 class="fs-4">Pedidos recientes</h2>
+                                <a href="order-history.html" class="fs-6">Ver todo</a>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-light">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col" class="h6">Orden #</th>
+                                        <th scope="col" class="h6">Fecha</th>
+                                        <th scope="col" class="h6">Total</th>
+                                        <th scope="col" class="h6">Estado</th>
+                                        <th scope="col" class="h6"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="itemsTabla">
+                                    <!-- Órdenes recientes -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Dashboard end  -->
+<div id="chatbot-container">
+    <div class="chat-button" id="chat-button"></div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-title">
+            ChatBot
+            <i class="fas fa-times" id="close-chat"></i>
+        </div>
+        <div class="conversation" id="conversation">
+            <!-- Conversación del chat -->
+        </div>
+        <form class="message-form" id="message-form">
+            <div class="input-group">
+                <input type="text" class="form-control" id="message-input" placeholder="Escribe un mensaje...">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="text-center text-lg-start text-white" style="background-color: #948979">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Re-Vibe</h6>
+                <p>
+                    Somos tu destino para moda nueva y usada en línea. Aquí, hacemos lo que queremos: exploramos estilos
+                    únicos y redefinimos la moda.
+                </p>
+            </div>
+            <hr class="w-100 d-md-none">
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Productos</h6>
+                <p><a href="..." class="text-white text-decoration-none">Hombre</a></p>
+                <p><a href="..." class="text-white text-decoration-none">Mujer</a></p>
+                <p><a href="..." class="text-white text-decoration-none">Niños</a></p>
+                <p><a href="..." class="text-white text-decoration-none">Mascotas</a></p>
+            </div>
+            <hr class="w-100 d-md-none">
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contáctanos</h6>
+                <p><i class="fas fa-home mr-3"></i> Cuenca, Azuay 010101, EC</p>
+                <p><i class="fas fa-envelope mr-3"></i> revibe@gmail.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +593 96 900 5822</p>
+                <p><i class="fas fa-print mr-3"></i> +593 99 551 3071</p>
+                <p><i class="fas fa-print mr-3"></i> +593 96 902 4827</p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Síguenos</h6>
+                <div class="d-flex justify-content-center">
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-google"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#!" class="btn btn-primary" style="background-color: transparent; width: 40px"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        Re-Vibe &copy; 2024. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/chatbot.js"></script>
+<script src="../js/user-dashboard.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
